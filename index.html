@@ -12,13 +12,15 @@
 <body>
   <!-- main logo / nav -->
   <header>
-    <h1>Lernantino</h1>
+    <div class="title">
+      <h1>Lernantino</h1>
+    </div>
     <nav>
       <ul>
-        <li>About Me</li>
-        <li>Work</li>
-        <li>Contact Me</li>
-        <li>Resume</li>
+        <li class="nav-element">About Me</li>
+        <li class="nav-element">Work</li>
+        <li class="nav-element">Contact Me</li>
+        <li class="nav-element">Resume</li>
       </ul>
     </nav>
   </header>
@@ -30,7 +32,7 @@
     </div>
   </section>
 
-  <main class="page-wrapper">
+  <main class="page-wrapper"></main>
     <!-- about me -->
     <section class="page-section" id="about">
       <h2>About Me</h2>
@@ -39,50 +41,53 @@
     </section>
 
     <!-- portfolio container -->
-    <section class="page-section" id="work">
+  <section class="page-section" id="work">
+
+    <div class="grid-header">
       <h2>Work</h2>
-      <section>
-        <div>
-          <h3>Surf Report</h3>
-          <p>MERN Stack</p>
-        </div>
-        <div>
-          <h3>LED Wall</h3>
-          <p>Node/IoT</p>
-        </div>
-        <div>
-          <h3>Calculator</h3>
-          <p>React/JavaScript/CSS</p>
-        </div>
-        <div>
-          <h3>Pastel Puzzles</h3>
-          <p>MERN Stack</p>
-        </div>
-        <div>
-          <h3>Run Buddy</h3>
-          <p>HTML/CSS</p>
-        </div>
-      </section>
-    </section>
+    </div>
+
+    <div class="grid">
+      <h3>Surf Report</h3>
+      <p>MERN Stack</p>
+    </div>
+    <div>
+      <h3>LED Wall</h3>
+      <p>Node/IoT</p>
+    </div>
+    <div>
+      <h3>Calculator</h3>
+      <p>React/JavaScript/CSS</p>
+    </div>
+    <div>
+      <h3>Pastel Puzzles</h3>
+      <p>MERN Stack</p>
+    </div>
+    <div>
+      <h3>Run Buddy</h3>
+      <p>HTML/CSS</p>
+    </div>
+
+  </section>
 
     <!-- contact -->
     <footer>
       <h2>Contact Me</h2>
-      <div>
+      <div class="contact">
       <ul>
-        <li>
+        <li class="contact-element">
           <a href="#">555.555.5555</a>
         </li>
-        <li>
+        <li class="contact-element">
           <a href="#">Learnantino</a>
         </li>
-        <li>
+        <li class="contact-element">
           <a href="#">Github</a>
         </li>
-        <li>
+        <li class="contact-element">
           <a href="#">Twitter</a>
         </li>
-        <li>
+        <li class="contact-element">
           <a href="#">Spotify</a>
         </li>
       </ul>

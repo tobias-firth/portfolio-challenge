@@ -7,27 +7,85 @@ header {
 } */
 
 *{
-  margin:0;
   font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box; 
+  /* Look into this */
+  /* margin:0; */
+}
+
+a {
+  text-decoration: none;
+  color:black;
 }
 
 header {
   background-color: aqua;
+  margin-bottom: 0px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100px 100px;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin: 0;
+}
+
+.title {
+  width: 100%;
+  height: 100px;
+  background-color: red;
 }
 
 h1 {
-  margin-left: 5px;
+  text-align: center;
+  font-size: 48px;
+  
 }
 
 ul {
   display: flex;
   flex-direction: row;
-
   list-style: none;
-  padding: 5px;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100px;
 }
 
-li {
-  padding: 5px;
-  flex-grow: 1;
+li { 
+  text-align: center;
+  font-size: 32px;
+  border-bottom: 3px solid black;
+}
+
+nav li:hover {
+  color: aqua;
+  background-color: black;
+  border-bottom: 3px solid aqua;
+  cursor: pointer;
+}
+
+ li.contact-element:hover {
+  font-weight: 900;
+  border-bottom: 5px solid black;
+}
+
+.hero-banner {
+  background-image: url("../images/02-hero-bg.jpg");
+  width: 100%;
+  height: 500px;
+  margin: 0;
+}
+.hero-banner h2 {
+  margin:0;
+  position: relative;
+  padding:20px;
+  background-color: rgba(32, 30, 97,0.6);
+  width: 400px;
+  font-size: 28px;
+  text-align: right;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 3px;
+  text-decoration-color: black;
 }
