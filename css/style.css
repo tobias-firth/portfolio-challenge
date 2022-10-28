@@ -1,23 +1,33 @@
-* {
-  box-sizing: border-box;
+/* For larger screen
+
+header {
+  display: flex;
+  flex-direction: row;
+  margin:5%
+} */
+
+*{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.5;
+header {
+  background-color: aqua;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+h1 {
+  margin-left: 5px;
 }
 
-p {
-  margin: 0;
+ul {
+  display: flex;
+  flex-direction: row;
+
+  list-style: none;
+  padding: 5px;
+}
+
+li {
+  padding: 5px;
+  flex-grow: 1;
 }
