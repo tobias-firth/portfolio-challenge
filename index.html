@@ -17,10 +17,10 @@
     </div>
     <nav>
       <ul>
-        <li class="nav-element">About Me</li>
-        <li class="nav-element">Work</li>
-        <li class="nav-element">Contact Me</li>
-        <li class="nav-element">Resume</li>
+        <li class="nav-element"> <a href="#about">About Me</a> </li>
+        <li class="nav-element"><a href="#work">Work</a></li>
+        <li class="nav-element"><a href="#contact">Contact Me</a></li>
+        <li class="nav-element"><a href="#">Resume</a></li>
       </ul>
     </nav>
   </header>
@@ -32,47 +32,63 @@
     </div>
   </section>
 
-  <main class="page-wrapper"></main>
+  <main class="page-wrapper">
     <!-- about me -->
     <section class="page-section" id="about">
-      <h2>About Me</h2>
+      <div class = "sub-heading">
+        <h2>About Me</h2>
+      </div>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum eligendi beatae incidunt iusto veritatis, consequatur ipsa impedit reiciendis perspiciatis ut minima tempore tenetur quae! Velit vero dolores iure quidem et?</p>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum eligendi beatae incidunt iusto veritatis, consequatur ipsa impedit reiciendis perspiciatis ut minima tempore tenetur quae! Velit vero dolores iure quidem et?</p>
     </section>
+  
 
     <!-- portfolio container -->
-  <section class="page-section" id="work">
+    
 
-    <div class="grid-header">
-      <h2>Work</h2>
-    </div>
+      <div class="sub-heading">
+        <h2>Work</h2>
+      </div>
 
-    <div class="grid">
-      <h3>Surf Report</h3>
-      <p>MERN Stack</p>
-    </div>
-    <div>
-      <h3>LED Wall</h3>
-      <p>Node/IoT</p>
-    </div>
-    <div>
-      <h3>Calculator</h3>
-      <p>React/JavaScript/CSS</p>
-    </div>
-    <div>
-      <h3>Pastel Puzzles</h3>
-      <p>MERN Stack</p>
-    </div>
-    <div>
-      <h3>Run Buddy</h3>
-      <p>HTML/CSS</p>
-    </div>
-
-  </section>
+      <section class="page-section" id="work">
+        <div class="grid" id="surf-report">
+          <div class="grid-text">
+            <h3>Surf Report</h3>
+            <p>MERN Stack</p>
+          </div>
+        </div>
+        <div class="grid" id="led-wall">
+          <div class="grid-text">
+            <h3>LED Wall</h3>
+            <p>Node/IoT</p>
+          </div>
+        </div>
+        <div class="grid" id="calculator">
+          <div class="grid-text">
+            <h3>Calculator</h3>
+            <p>React/JavaScript/CSS</p>
+          </div>
+        </div>
+        <div class="grid" id="pastel-puzzles">
+          <div class="grid-text">
+            <h3>Pastel Puzzles</h3>
+            <p>MERN Stack</p>
+          </div>
+        </div>
+        <div class="grid" id="run-buddy">
+          <div class="grid-text">
+            <h3>Run Buddy</h3>
+            <p>HTML/CSS</p>
+          </div>
+        </div>
+    </section>
+  </main>
 
     <!-- contact -->
     <footer>
-      <h2>Contact Me</h2>
+      <div class="sub-heading" id="contact">
+        <h2>Contact Me</h2>
+      </div>
       <div class="contact">
       <ul>
         <li class="contact-element">

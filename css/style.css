@@ -42,10 +42,14 @@ h1 {
   
 }
 
+
 ul {
+  list-style: none;
+}
+
+nav ul {
   display: flex;
   flex-direction: row;
-  list-style: none;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
@@ -55,7 +59,15 @@ ul {
 li { 
   text-align: center;
   font-size: 32px;
-  border-bottom: 3px solid black;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 3px;
+  text-decoration-color: black;
+}
+
+footer li {
+  text-align: left;
+  margin-left: 0px;
 }
 
 nav li:hover {
@@ -89,3 +101,55 @@ nav li:hover {
   text-decoration-thickness: 3px;
   text-decoration-color: black;
 }
+
+.sub-heading {
+  border-bottom: 3px solid black;
+}
+
+#surf-report {
+  background-image: url("../images/02-portfolio-4.jpg");
+}
+
+#led-wall {
+  background-image: url("../images/02-portfolio-1.jpg");
+}
+
+#calculator {
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+
+#pastel-puzzles {
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+
+#run-buddy {
+  background-image: url("../images/02-run-buddy.jpg");
+}
+
+#work {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 400px 400px 400px 400px 400px;
+  row-gap: 30px;
+  margin: 25px;
+  
+}
+
+div.page-section {
+  padding:5%;
+  border: 3px solid black;
+}
+
+.grid {
+  border: 5px solid black;
+  background-position: center;
+}
+
+.grid-text {
+  background-color: rgba(32, 30, 97,0.6);
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-right:15px;
+  margin-top: 250px;
+  max-width: fit-content;
+} 
