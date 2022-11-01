@@ -6,6 +6,7 @@ header {
   margin:5%
 } */
 
+
 *{
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box; 
@@ -65,31 +66,35 @@ li {
   text-decoration-color: black;
 }
 
-footer li {
-  text-align: left;
-  margin-left: 0px;
-}
-
-nav li:hover {
+li a:hover {
   color: aqua;
   background-color: black;
-  border-bottom: 3px solid aqua;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 3px;
+  text-decoration-color: aqua;
   cursor: pointer;
-}
+} 
 
  li.contact-element:hover {
   font-weight: 900;
-  border-bottom: 5px solid black;
+  /* border-bottom: 5px solid black; */
 }
 
 .hero-banner {
   background-image: url("../images/02-hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(110, 147, 176,0.7);
+  background-blend-mode: multiply;
   width: 100%;
   height: 500px;
   margin: 0;
 }
 .hero-banner h2 {
   margin:0;
+  z-index: 100;
   position: relative;
   padding:20px;
   background-color: rgba(32, 30, 97,0.6);
@@ -104,35 +109,47 @@ nav li:hover {
 
 .sub-heading {
   border-bottom: 3px solid black;
+  grid-area: sub-heading;
 }
 
 #surf-report {
   background-image: url("../images/02-portfolio-4.jpg");
+  grid-area: surf-report;
 }
 
 #led-wall {
   background-image: url("../images/02-portfolio-1.jpg");
+  grid-area: led-wall;
 }
 
 #calculator {
   background-image: url("../images/02-portfolio-2.jpg");
+  grid-area: calculator;
 }
 
 #pastel-puzzles {
   background-image: url("../images/02-portfolio-3.jpg");
+  grid-area: pastel-puzzles;
 }
 
 #run-buddy {
   background-image: url("../images/02-run-buddy.jpg");
+  grid-area: run-buddy;
 }
 
 #work {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 400px 400px 400px 400px 400px;
+  grid-template-rows: 100px 400px 400px 400px 400px 400px;
+  grid-template-areas: 
+                      "sub-heading"
+                      "surf-report"
+                      "led-wall"
+                      "calculator"
+                      "pastel-puzzles"
+                      "run-buddy";
   row-gap: 30px;
   margin: 25px;
-  
 }
 
 div.page-section {
@@ -141,15 +158,96 @@ div.page-section {
 }
 
 .grid {
-  border: 5px solid black;
+  border: 5px solid red;
   background-position: center;
 }
 
 .grid-text {
-  background-color: rgba(32, 30, 97,0.6);
+  background-color: red;
   padding-top:5px;
   padding-bottom:5px;
   padding-right:15px;
+  padding-left: 10px;
   margin-top: 250px;
+  margin-bottom: 50px;
   max-width: fit-content;
-} 
+}
+
+footer li {
+  text-align: left;
+  margin-left: 0px;
+}
+
+@media screen and (min-width:800px) {
+  #work {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+                        "sub-heading surf-report surf-report"
+                        "sub-heading led-wall calculator"
+                        "sub-heading pastel-puzzles run-buddy";
+    row-gap: 30px;
+    margin: 25px;
+    column-gap: 30px;
+  }
+  #work-heading {
+    border-right: 3px solid black;
+    border-bottom: 0;
+    text-align: right;
+    padding-right: 5px;
+    font-size: 32px;
+  }
+  #about {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "about-heading about-content";
+    row-gap: 30px;
+    margin: 25px;
+    column-gap: 30px;
+  }
+  #about-heading {
+    grid-area: about-heading;
+    border-bottom: 0;
+    border-right: 3px solid black;
+    text-align: right;
+    padding-right: 5px;
+    font-size: 32px;
+  }
+  #about-content {
+    grid-area: about-content;
+  }
+  
+footer {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "contact-heading contact-bar";
+    row-gap: 30px;
+    margin: 25px;
+    column-gap: 30px;
+}
+
+#contact-heading {
+  grid-area: contact-heading;
+  border-bottom: 0;
+  border-right: 3px solid black;
+  text-align: right;
+  padding-right: 5px;
+  font-size: 32px;
+}
+
+#contact-bar {
+  grid-area: contact-bar;
+}
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100px;
+}
+
+}
